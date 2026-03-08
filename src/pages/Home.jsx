@@ -103,13 +103,37 @@ export default function Home() {
           <h2>Our Portfolio</h2>
           <p className="lead">A portfolio of operating companies, each independently managed and built for long-term institutional performance.</p>
           <div className="pgrid">
-            <div className="pcard" onClick={() => go('/portfolio/ascenda')}><div className="pcard-logo">ASC</div><h3>Ascenda Group</h3><p>Healthcare services and retail brokerage platform</p><span className="pcard-lnk">View entity →</span></div>
-            <div className="pcard" onClick={() => go('/portfolio/capdev')}><div className="pcard-logo">CAP</div><h3>CapDev</h3><p>Cross-border capital development and workforce execution</p><span className="pcard-lnk">View entity →</span></div>
-            <div className="pcard" onClick={() => go('/portfolio/dcs-network')}><div className="pcard-logo">DCS</div><h3>DCS Network</h3><p>Technology infrastructure and digital services</p><span className="pcard-lnk">View entity →</span></div>
-            <div className="pcard" onClick={() => go('/portfolio/dm-holdings')}><div className="pcard-logo">DM</div><h3>DM Holdings</h3><p>Private credit and capital allocation</p><span className="pcard-lnk">View entity →</span></div>
-            <div className="pcard" onClick={() => go('/portfolio/sarbok-investments')}><div className="pcard-logo">SI</div><h3>Sarbok Investments</h3><p>Direct investment and strategic capital arm</p><span className="pcard-lnk">View entity →</span></div>
-            <div className="pcard" onClick={() => go('/contact')}><div className="pcard-logo" style={{ background: 'var(--primary)' }}>+</div><h3>Engage with the Group</h3><p>Institutional partners, investors, and executive candidates</p><span className="pcard-lnk">Contact us →</span></div>
-          </div>
+  <div className="pcard" onClick={() => go('/portfolio/ascenda')}>
+    <div className="pcard-logo">ASC</div>
+    <h3>Ascenda Group</h3><p>Healthcare services and retail brokerage platform</p>
+    <span className="pcard-lnk">View entity →</span>
+  </div>
+  <div className="pcard" onClick={() => go('/portfolio/capdev')}>
+    <div className="pcard-logo"><img src="/logos/logo-capdev.svg" alt="CapDev" /></div>
+    <h3>CapDev</h3><p>Cross-border capital development and workforce execution</p>
+    <span className="pcard-lnk">View entity →</span>
+  </div>
+  <div className="pcard" onClick={() => go('/portfolio/dcs-network')}>
+    <div className="pcard-logo"><img src="/logos/logo-dcs.svg" alt="DCS Network" /></div>
+    <h3>DCS Network</h3><p>Technology infrastructure and digital services</p>
+    <span className="pcard-lnk">View entity →</span>
+  </div>
+  <div className="pcard" onClick={() => go('/portfolio/dm-holdings')}>
+    <div className="pcard-logo"><img src="/logos/logo-dm.svg" alt="DM Holdings" /></div>
+    <h3>DM Holdings</h3><p>Private credit and capital allocation</p>
+    <span className="pcard-lnk">View entity →</span>
+  </div>
+  <div className="pcard" onClick={() => go('/portfolio/sarbok-investments')}>
+    <div className="pcard-logo"><img src="/logos/logo-sarbokinvestments.svg" alt="Sarbok Investments" /></div>
+    <h3>Sarbok Investments</h3><p>Direct investment and strategic capital arm</p>
+    <span className="pcard-lnk">View entity →</span>
+  </div>
+  <div className="pcard" onClick={() => go('/contact')}>
+    <div className="pcard-logo" style={{ background: 'var(--primary)' }}>+</div>
+    <h3>Engage with the Group</h3><p>Institutional partners, investors, and executive candidates</p>
+    <span className="pcard-lnk">Contact us →</span>
+  </div>
+</div>
         </div>
       </div>
 

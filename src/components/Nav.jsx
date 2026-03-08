@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Nav() {
   const [mobOpen, setMobOpen] = useState(false);
@@ -22,7 +22,7 @@ export default function Nav() {
     <nav className="nav" style={{ boxShadow: scrolled ? '0 2px 16px rgba(0,0,0,0.22)' : 'none' }}>
       <div className="nav-inner">
         <div className="nav-logo" onClick={() => go('/')}>
-          Sarbok<span> Group</span>
+          <img src="/logos/logo-sarbok-group.svg" alt="Sarbok Group" style={{ height: 38, width: '100%', maxWidth: 220, filter: 'brightness(0) invert(1)' }} />
         </div>
         <div className="nav-links">
           <a onClick={() => go('/')}>Home</a>
