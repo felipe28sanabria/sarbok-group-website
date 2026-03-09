@@ -15,38 +15,38 @@ export default function Portfolio() {
       </div>
 
       <div className="sec"><div className="sec-inner">
-        <div className="prose" style={{ maxWidth: 680, marginBottom: 36 }}>
-          <p>The Sarbok Group portfolio is built for operational durability, not valuation-driven growth. Each company is independently managed with dedicated leadership, separate capitalization, and governance structures aligned with institutional standards.</p>
+        <div className="prose sr" style={{ maxWidth: 680, marginBottom: 36 }}>
+          <p>The Sarbok Group portfolio is built for operational durability, not valuation-driven growth. Each company is independently managed with dedicated leadership, separate capitalization, and governance structures aligned with institutional standards. The Group's role is to set performance standards, provide shared services infrastructure, and deploy capital through documented frameworks — not to run the companies.</p>
         </div>
         <div className="pgrid">
-          <div className="pcard" onClick={() => go('/portfolio/ascenda')}>
-            <div className="pcard-logo">ASC</div>
+          <div className="pcard sr" onClick={() => go('/portfolio/ascenda')}>
+            <div className="pcard-logo"><img src="/logos/logo-ascenda.svg" alt="Ascenda Group" /></div>
             <h3>Ascenda Group</h3><p>Healthcare services and retail brokerage platform — connecting brands to buyers across major retail channels.</p>
             <span className="pcard-lnk">View entity →</span>
           </div>
-          <div className="pcard" onClick={() => go('/portfolio/capdev')}>
-            <div className="pcard-logo" style={{ padding: '8px 0' }}><img src="/logos/logo-capdev.svg" alt="CapDev" style={{ height: 36, width: 'auto', maxWidth: 120 }} /></div>
-            <h3>CapDev</h3><p>Cross-border capital development and workforce execution platform.</p>
+          <div className="pcard sr sr-d1" onClick={() => go('/portfolio/capdev')}>
+            <div className="pcard-logo"><img src="/logos/logo-capdev.svg" alt="CapDev" /></div>
+            <h3>CapDev</h3><p>Cross-border capital development and workforce execution platform — operating across the United States and Costa Rica.</p>
             <span className="pcard-lnk">View entity →</span>
           </div>
-          <div className="pcard" onClick={() => go('/portfolio/dcs-network')}>
-            <div className="pcard-logo" style={{ padding: '8px 0' }}><img src="/logos/logo-dcs.svg" alt="DCS Network" style={{ height: 36, width: 'auto', maxWidth: 120 }} /></div>
+          <div className="pcard sr sr-d2" onClick={() => go('/portfolio/dcs-network')}>
+            <div className="pcard-logo"><img src="/logos/logo-dcs.svg" alt="DCS Network" /></div>
             <h3>DCS Network</h3><p>Technology infrastructure and digital services platform.</p>
             <span className="pcard-lnk">View entity →</span>
           </div>
-          <div className="pcard" onClick={() => go('/portfolio/dm-holdings')}>
-            <div className="pcard-logo" style={{ padding: '8px 0' }}><img src="/logos/logo-dm.svg" alt="DM Holdings" style={{ height: 36, width: 'auto', maxWidth: 120 }} /></div>
+          <div className="pcard sr" onClick={() => go('/portfolio/dm-holdings')}>
+            <div className="pcard-logo"><img src="/logos/logo-dm.svg" alt="DM Holdings" /></div>
             <h3>DM Holdings</h3><p>Private credit and capital allocation — providing liquidity without outside equity dilution.</p>
             <span className="pcard-lnk">View entity →</span>
           </div>
-          <div className="pcard" onClick={() => go('/portfolio/sarbok-investments')}>
-            <div className="pcard-logo" style={{ padding: '8px 0' }}><img src="/logos/logo-sarbokinvestments.svg" alt="Sarbok Investments" style={{ height: 36, width: 'auto', maxWidth: 120 }} /></div>
+          <div className="pcard sr sr-d1" onClick={() => go('/portfolio/sarbok-investments')}>
+            <div className="pcard-logo"><img src="/logos/logo-sarbokinvestments.svg" alt="Sarbok Investments" /></div>
             <h3>Sarbok Investments</h3><p>Direct investment and strategic capital allocation — disciplined underwriting, structured deal vehicles.</p>
             <span className="pcard-lnk">View entity →</span>
           </div>
-          <div className="pcard" onClick={() => go('/contact')}>
-            <div className="pcard-logo" style={{ background: 'var(--primary)' }}>+</div>
-            <h3>Engage with the Group</h3><p>Institutional partners, investors, and executive candidates.</p>
+          <div className="pcard sr sr-d2" onClick={() => go('/contact')}>
+            <div className="pcard-logo" style={{ fontSize: 22, color: 'var(--lgray)' }}>+</div>
+            <h3>Engage with the Group</h3><p>Institutional partners, investors, and executive candidates</p>
             <span className="pcard-lnk">Contact us →</span>
           </div>
         </div>

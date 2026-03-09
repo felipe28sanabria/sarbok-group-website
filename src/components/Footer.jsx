@@ -2,18 +2,14 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
   const navigate = useNavigate();
-
-  function go(path) {
-    navigate(path);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  function go(path) { navigate(path); window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
   return (
     <footer>
       <div className="ft-inner">
         <div className="ft-top">
           <div>
-            <img src="/logos/logo-sarbok-group.svg" alt="Sarbok Group" style={{ height: 40, width: 'auto', filter: 'brightness(0) invert(1)', marginBottom: 12 }} />
+            <div className="ft-brand-name">Sarbok Group</div>
             <div className="ft-brand-tag">A family-office-backed operating holding company. Operator-led. Cash-flow disciplined. Institutionally documented.</div>
           </div>
           <div className="ft-col">

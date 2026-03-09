@@ -1,8 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import StagingNotice from '../components/StagingNotice';
-import PipeDriveForm from '../components/PipeDriveForm';
 
-export default function Contact() {
+export default function Legal() {
   const navigate = useNavigate();
   function go(path) { navigate(path); window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
@@ -10,67 +8,45 @@ export default function Contact() {
     <>
       <div className="inner-hero">
         <div className="inner-hero-inner">
-          <div className="bc"><a onClick={() => go('/')}>Home</a><span className="bc-sep">/</span>Contact</div>
-          <h1>Get in Touch</h1>
-          <p>We respond to substantive inquiries from institutional partners, investors, and executive candidates.</p>
+          <div className="bc"><a onClick={() => go('/')}>Home</a><span className="bc-sep">/</span>Legal</div>
+          <div className="sec-eye-w sr">Legal</div>
+          <h1 className="sr sr-d1">Legal & Compliance</h1>
+          <p className="sr sr-d2">Privacy Policy, Terms of Use, and Investment Disclaimer.</p>
         </div>
       </div>
 
       <div className="sec"><div className="sec-inner">
-        <div className="g2c">
-          <div>
-            <div className="sec-eye">Contact Information</div>
-            <h2>Sarbok Group</h2>
-            <div className="cinfo" style={{ marginTop: 22 }}>
-              <StagingNotice>Registered address and contact email pending confirmation from client.</StagingNotice>
-              <div className="cinfo-item">
-                <div className="cinfo-item-label">Registered Address</div>
-                <div className="cinfo-item-val">[Pending client confirmation]</div>
-              </div>
-              <div className="cinfo-item">
-                <div className="cinfo-item-label">General Inquiries</div>
-                <div className="cinfo-item-val">[Pending client confirmation]</div>
-              </div>
-              <div className="cinfo-item">
-                <div className="cinfo-item-label">Response Time</div>
-                <div className="cinfo-item-val">Within three business days for substantive inquiries</div>
-              </div>
-              <div className="cinfo-item">
-                <div className="cinfo-item-label">Investor Relations</div>
-                <div className="cinfo-item-val"><a onClick={() => go('/investors')} style={{ cursor: 'pointer' }}>Submit through the Investor Relations page →</a></div>
-              </div>
-              <div className="cinfo-item">
-                <div className="cinfo-item-label">Vendor / Partner Inquiries</div>
-                <div className="cinfo-item-val"><a onClick={() => go('/portfolio/ascenda')} style={{ cursor: 'pointer' }}>Ascenda vendor intake form →</a></div>
-              </div>
-            </div>
+        <div className="disc-box sr">
+          <div className="disc-lbl">Staging Placeholder — Legal Review Required</div>
+          <div className="disc-txt">All three legal pages — Privacy Policy, Terms of Use, and Investment Disclaimer — require attorney-reviewed final copy from Debra Buhring before this section can go live. No legal page may be published without Debra Buhring's written sign-off or a documented exception from Carl Sauter.</div>
+        </div>
+
+        <div style={{ marginTop: 64 }} className="sr sr-d1">
+          <div className="sec-eye">Privacy Policy</div>
+          <h2 style={{ marginTop: 8 }}>Privacy Policy</h2>
+          <div className="prose" style={{ marginTop: 16, maxWidth: 680 }}>
+            <p><em>Attorney-reviewed copy pending — Debra Buhring.</em></p>
           </div>
-          <div>
-            <div className="sec-eye">Send a Message</div>
-            <h2>General Inquiry</h2>
-            <div className="form-wrap" style={{ marginTop: 16 }}>
-              <PipeDriveForm entity="Sarbok Group" formType="General Contact" submitLabel="Send Message">
-                <div className="fg2">
-                  <div className="field"><label>Full Name *</label><input type="text" name="name" required placeholder="Your full name" /></div>
-                  <div className="field"><label>Organization</label><input type="text" name="org" placeholder="Your organization" /></div>
-                </div>
-                <div className="field"><label>Inquiry Type *</label>
-                  <select name="inquiry_type" required>
-                    <option value="">Select…</option>
-                    <option>Partnership Inquiry</option>
-                    <option>Executive Candidate</option>
-                    <option>Media / Press</option>
-                    <option>General Question</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                <div className="fg2">
-                  <div className="field"><label>Email Address *</label><input type="email" name="email" required placeholder="you@company.com" /></div>
-                  <div className="field"><label>Phone (optional)</label><input type="tel" name="phone" placeholder="+1 (555) 000-0000" /></div>
-                </div>
-                <div className="field"><label>Message *</label><textarea name="message" required placeholder="Describe your inquiry…" /></div>
-              </PipeDriveForm>
-            </div>
+        </div>
+
+        <div className="sec-divider" style={{ margin: '48px 0' }} />
+
+        <div className="sr">
+          <div className="sec-eye">Terms of Use</div>
+          <h2 style={{ marginTop: 8 }}>Terms of Use</h2>
+          <div className="prose" style={{ marginTop: 16, maxWidth: 680 }}>
+            <p><em>Attorney-reviewed copy pending — Debra Buhring.</em></p>
+          </div>
+        </div>
+
+        <div className="sec-divider" style={{ margin: '48px 0' }} />
+
+        <div className="sr">
+          <div className="sec-eye">Investment Disclaimer</div>
+          <h2 style={{ marginTop: 8 }}>Investment Disclaimer</h2>
+          <div className="disc-box" style={{ marginTop: 16 }}>
+            <div className="disc-lbl">Investment Disclaimer — Staging Placeholder</div>
+            <div className="disc-txt">This website and any materials presented on it do not constitute an offer to sell or a solicitation of an offer to buy any securities. Investment opportunities described herein are available only to qualified or accredited investors as defined by applicable law. All investments involve risk. Past performance is not indicative of future results. Please review the formal offering documents before making any investment decision. Attorney-reviewed final copy required from Debra Buhring before this page goes live.</div>
           </div>
         </div>
       </div></div>
